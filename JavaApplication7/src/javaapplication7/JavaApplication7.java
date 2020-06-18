@@ -25,8 +25,13 @@ public class JavaApplication7 {
      
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int matriz[][],matriz1[][], resultado[][],M1[][], filas,columnas;
+        int matriz[][],matriz1[][], resultado[][],M1[][],F1[], filas,columnas;
         int A,B,a,b,q,w,contador;
+        int num1 = 0;
+        int num2 = 1;
+        int temp;
+       
+        
         System.out.println("1er)Introdusca las dimensiones de la primera matriz");
         System.out.println("filas");
         q=entrada.nextInt();
@@ -34,15 +39,18 @@ public class JavaApplication7 {
         w=entrada.nextInt();
         M1=new int [q][w];
         
+        System.out.println("Resultado de la funcion  F(x,y)= 5x-2y*3  matriz");
         
         
-        for (int i = 5; i < q; i++) {
-            for(int j=2;j<w;j++){
+        for (int i = 0; i < q; i++) {
+            for(int j=0;j<w;j++){
           M1[i][j]=(5*i-2*j)*3;
-           
             
         
-                 System.out.println("Resultado de la funcion  F(x,y)= 5x-2y*3  matriz");
+           
+           
+        
+                 
                 
                 System.out.print(M1[i][j]+"/");
                     
@@ -54,7 +62,7 @@ public class JavaApplication7 {
         }
         }
         
-        System.out.println("introduzca el contador (numero a multiplicar)");
+        System.out.println("2da) introduzca el contador (numero a multiplicar)");
         contador=entrada.nextInt();
         System.out.println("Introdusca las dimensiones de la primera matriz");
         System.out.println("filas");
@@ -103,6 +111,33 @@ public class JavaApplication7 {
             
             
         }
+        {
+        
+        }
+        System.out.println("4) Introduzca el tamaño del arreglo unidimensional para fibonacci");
+        int F;
+        int f;
+        
+        F=entrada.nextInt();
+        F=F+1;
+         F1=new int [F];
+          
+               
+           
+            for (int i = 0; i < F; i++) {
+                System.out.println(num1);
+                
+                temp = num1 + num2;
+                num1 = num2;
+                num2 = temp;
+                
+            }
+            
+        }
     }
-    
-}
+
+
+
+
+
+
